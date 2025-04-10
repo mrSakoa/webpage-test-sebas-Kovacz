@@ -29,6 +29,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
 a:hover{
   color: #ffffff;
   text-decoration: underline;
@@ -36,7 +37,7 @@ a:hover{
 .header-hospital-name{
   font-size: 56px;
   text-align: center;
-}
+  text-decoration: underline;
 }
 .body-banner{
   width: 100%;
@@ -72,4 +73,87 @@ width: 50%;
   font-size: 24px;
   margin-bottom: 15px;
   text-align: center;
+}
+.contact-main{
+  background-color: #e4e4e4;
+  height: 150px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-main h1{
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 1.5px;  
+}
+.contact-main p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sports-main{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+}
+.Sport-article{
+  background-color:#e4e4e4;
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.Sport-article h2{
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1.5px;  
+}
+.Sport-article img{
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.health-main{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1.5px; 
+}
+.health-article{  
+  background-color:#e4e4e4; 
+  width: 75%;  
+  margin: auto;  
+  border-radius: 10px;
+}
+.health-article h2{
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1.5px;  
+}
+.health-article img{
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.health-article p{
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px;
+}
+.health-article ul{
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px;
+  margin-bottom: 40px;
 }
