@@ -82,27 +82,43 @@ body {
 /*Index ends            ----------------------------------------------------------------------------------- */
 
 /*Contact starts        ----------------------------------------------------------------------------------- */
-.contact-form h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-.contact-main{
+.contact-title{
   background-color: #e4e4e4;
   height: 150px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
 }
-.contact-main h1{
+.contact-title p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.contact-title h1{
   font-size: 30px;
   text-decoration: underline;
   letter-spacing: 1.5px;  
 }
-.contact-main p{
-  font-size: 18px;
-  margin-bottom: 20px;
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;    
+  gap: 0.5rem;
 }
+.contact-form .title {
+ padding-left: 100px;
+}
+.contact-form .form > div {
+  margin-bottom: 10px;
+  padding: 5px 150px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 5px ridge;
+}
+
+
 /*Contact ends          ----------------------------------------------------------------------------------- */
 
 /*Sports starts         ----------------------------------------------------------------------------------- */
