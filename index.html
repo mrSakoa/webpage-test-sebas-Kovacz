@@ -12,11 +12,55 @@
 <body>
     <!-- remover los br, y pasar los table a flex-->
     <header>
-        <p class="header-telephones">24-hour phone assistance: 4123-1234 / Appointment center: 0810-333-3333</p>
+        <div class="header-telephones">
+            <p>24-hour phone assistance: 4123 -1234</p>
+            <p>/</p> 
+            <p> Appointment center: 0810-333-3333</p>
+        </div>            
         <main>        
             <img class="header-logo" src="./art/images/hells pass logo no name.png" alt="Logo of Hell's Pass Hospital">        
-            <h1 class="header-hospital-name"> Welcome to Hell's Pass Hospital  </h1>
-        </main>        
+            <h1 class="header-hospital-name"> 
+                <p>Welcome to </p>
+                <p>Hell's Pass Hospital</p>
+            </h1>  
+        </main>           
+        
+        <!-- hamburger menu   -------------------------------->    
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./book/turns.html">Turns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./book/health.html">Health</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./book/sport.html">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./book/contact.html">Contact</a>
+                            </li> 
+                        </ul>
+                    </div>                  
+                </div>
+            </div>
+        </nav>        
+                
+        <!-- hamburger menu   --------------------------------> 
         <nav class="navigation-table-father">      
             <div class="navigation-table-child">       
                 <a href="./index.html">Home</a>                                   
@@ -36,12 +80,14 @@
         </nav>
     </header>
    <img class="body-banner" src="./art/images/hells pass banner.png" alt="Hospital image">
+
    <section class="index-news">
        <h2 class="index-body-news">News</h2>
+       
        <div class="container">
-           <div class="row">
-             <div class="col">
-                   <div class="card h-100">
+           <div class="row g-4">
+             <div class="col-12 col-md-6 col-lg-4">
+                   <div class="card">
                        <div class="card-body">
                            <h3 class="card-title">Hospital Hell's Pass won an award</h3>
                            <article class="card-text">
@@ -52,8 +98,8 @@
                         </div>
                    </div>
                </div>
-               <div class="col">
-                   <div class="card h-100">
+               <div class="col-12 col-md-6 col-lg-4">
+                   <div class="card">
                        <div class="card-body">
                            <h3 class="card-title">Laboratory Accreditation</h3>
                            <article class="card-text">
@@ -64,10 +110,10 @@
                         </div>
                     </div>
                </div>           
-               <div class="col">
-                   <div class="card h-100">                   
+               <div class="col-12 col-md-6 col-lg-4">
+                   <div class="card">  
                        <div class="card-body">                   
-                           <h5 class="card-title">New MRI Machine Installed</h5>                   
+                           <h3 class="card-title">New MRI Machine Installed</h3>                   
                            <article class="card-text">                           
                                <p>Hells pass Hospital has installed a cutting-edge MRI machine to improve diagnostic speed and accuracy Dr. Lisa Carter, Chief Radiologist, says the new system will reduce wait times and provide clearer imaging.</p> 
                                <p>Made possible by community donations and a health grant, the machine begins operation Monday.</p> 
@@ -79,31 +125,32 @@
            </div>        
        </div>
    </section>   
-  <footer>
-    <div class="footer-table">
-       <div class="row">
-         <div class="col">
-           <h4 class="footer-title">Mr./Ms. Consumer or User:</h4>    
-           <p>For any questions or complaints, please contact the Consumer Defense and Protection Department at any Neighborhood Management and Participation Center of the City Government and/or call the City's toll-free number 123.</p>
+   <footer>
+       <div class="container footer-table">
+         <div class="row">
+           <div class="col-12 col-md-9 footer-consumer">
+             <h4>Mr./Ms. Consumer or User:</h4>    
+             <p>For any questions or complaints, please contact the Consumer Defense and Protection Department at any Neighborhood Management and Participation Center of the City Government and/or call the City's toll-free number 123.</p>
+           </div>
+           <div class="col-12 col-md-3 footer-contact">
+             <h4>You can also find us in:</h4>
+             <a href="https://www.instagram.com" target="_blank">
+               <img src="./art/images/instagram white.svg" alt="instagram link">               
+             </a>
+             <a href="https://www.facebook.com" target="_blank">
+               <img src="./art/images/facebook small icon white.svg" alt="facebook link">               
+             </a>
+             <a href="https://x.com/" target="_blank">
+               <img src="./art/images/x-twitter white.svg" alt="twitter link">
+             </a>
+             <a href="https://www.youtube.com" target="_blank">
+               <img src="./art/images/youtube icon white.svg" alt="youtube link">
+             </a>
+           </div>
          </div>
-         <div class="col ms-auto text-end">
-           <h4 class="footer-title">You can also find us in:</h4>
-           <a href="https://www.instagram.com" target="_blank">
-             <img src="./art/images/instagram white.svg" alt="instagram link">               
-           </a>
-           <a href="https://www.facebook.com" target="_blank">
-             <img src="./art/images/facebook small icon white.svg" alt="facebook link">               
-           </a>
-           <a href="https://x.com/" target="_blank">
-             <img src="./art/images/x-twitter white.svg" alt="twitter link">
-           </a>
-           <a href="https://www.youtube.com" target="_blank">
-             <img src="./art/images/youtube icon white.svg" alt="youtube link">
-           </a>
-         </div>
-       </div>         
-     </div>
-   </footer> 
+       </div>       
+    </footer> 
+      
     <!--  link to BOOTSTRAP javascrip, siempre entre el fin del footer y el fin del body      -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
