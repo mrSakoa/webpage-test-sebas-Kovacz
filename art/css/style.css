@@ -159,7 +159,6 @@ body {
   padding: 40px 20px;
   width: 70%;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
 .contact-form .title {
@@ -211,8 +210,6 @@ body {
     gap: 0px;
     background-color: #e4e4e4;
     width: 95%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
   }
   .contact-form .form > div {
@@ -231,13 +228,12 @@ body {
   .contact-form .consultation textarea {
     height: 300px;
     width: 100%;
-  }
+  }  
   .contact-form .button{
     display: block;
     height: 50px;
     width: 150px;
     margin: 20px auto;
-
   }
     
 }
@@ -249,16 +245,13 @@ body {
   font-size: 30px;
   text-align: center;
   text-decoration: underline;
-  letter-spacing: 1.5px;
 }
 .Sport-article{
   background-color:#e4e4e4;
-  width: 50%;
+  width: 85%;
   align-items: center;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .Sport-article h2{
   font-size: 24px;
@@ -271,49 +264,95 @@ body {
   height: auto;
   border-radius: 20px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 10px auto;
+}
+@media screen and (max-width: 500px){
+  
+  .Sport-article img{
+    width: 70%;
+  }
+  .Sport-article{
+    background-color:#e4e4e4;
+    width: 95%;
+    padding: 10px;
+  }
+  .Sport-article h2{
+    font-size: 20px;
+  }    
 }
 /*Sports ends           ----------------------------------------------------------------------------------- */
 
 /*Health starts         ----------------------------------------------------------------------------------- */
 .health-main{
-  font-size: 30px;
+  font-size: 34px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: 1.5px; 
 }
 .health-article{  
   background-color:#e4e4e4; 
-  width: 75%;  
+  width: 85%;  
   margin: auto;  
+  padding: 20px;
   border-radius: 10px;
 }
 .health-article h2{
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   text-decoration: underline;
-  letter-spacing: 1.5px;  
+  letter-spacing: 1.5px;
+  margin: 15px 0px;
 }
 .health-article img{
   width: 50%;
   height: auto;
   border-radius: 20px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 30px auto;
 }
 .health-article p{
   font-size: 18px;
   text-align: justify;
-  margin: 20px;
 }
 .health-article ul{
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
-  margin: 20px;
-  margin-bottom: 40px;
+  margin: 25px;
+  margin-bottom: 20px;
 }
+@media screen and (max-width: 500px){
+  .health-article{  
+  background-color:#e4e4e4; 
+  width: 95%;  
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  }
+  .health-article h2{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px 0px;
+  }
+  .health-article p{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .health-article img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 15px auto;
+  }
+  .health-article ul{
+    font-size: 18px;
+    text-align: justify;
+    margin: 5px;
+    margin-bottom: 20px;
+  }  
+}
+
 /*Health ends               ----------------------------------------------------------------------------------- */
 /*Turns Starts              ----------------------------------------------------------------------------------- */
 .patient-form {
@@ -322,12 +361,13 @@ body {
   padding: 40px 20px;
   width: 70%;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .patient-form-title {
   text-align: center;
   margin-bottom: 40px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .patient-form-title h1 {
@@ -336,10 +376,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-.patient-form-title p {
-  font-size: 20px;
-  margin-top: 10px;
-}
 
 .patient-form .form {
   display: flex;
@@ -351,13 +387,11 @@ body {
 .patient-form .form > div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .patient-form label {
   font-size: 18px;
   font-weight: bold;
-  width: 40%;
 }
 
 .patient-form input,
@@ -384,5 +418,53 @@ body {
   width: 150px;
   margin-top: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px){
+  .patient-form {
+    background-color: #e4e4e4;
+    margin: 10px auto 20px;
+    padding: 0px;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .patient-form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .patient-form-title h1 {
+    font-size: 30px;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+  }
+  .patient-form .form {
+    gap: 15px;
+    padding: 0 15px;
+  }  
+  .patient-form .form > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px;
+    
+  }
+  .patient-form input,
+  .patient-form textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 5px ridge;
+    height: auto;
+    width: 100%;
+  }
+  .patient-form .button {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
 }
 /*Turns ends                ----------------------------------------------------------------------------------- */
