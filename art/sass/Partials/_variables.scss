@@ -1,0 +1,10 @@
+
+$primary-color: #b8b8b6;
+$secondary-color: #e4e4e4;
+$tertiary-color: #858585;
+
+@mixin row-centered{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

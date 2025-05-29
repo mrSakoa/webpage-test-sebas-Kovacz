@@ -1,0 +1,9 @@
+@use "partials/header-footer" as *;
+@use 'partials/variables' as*;
+
+body {
+    background-color: $primary-color;
+}
+.navbar {
+display:  none;
+}
