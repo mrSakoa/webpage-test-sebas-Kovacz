@@ -1,14 +1,92 @@
 @use "variables" as *;
 
-.header-telephones{
-    @include row-centered;
-  font-size: 16px;
-  font-weight: bold;
-  gap: 10px;
+.header-telephones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  font-size: 14px;
+  height: auto;
+  width: 100%;
   background-color: $secondary-color;
 
-  a{
-    color:black;
+  p:nth-child(2) {
+    display: none;
+  }
+
+  a {
     text-decoration: none;
+    color: black;
+  }
+}
+
+.header-logo {
+  display: block;
+  margin: auto;
+  padding-left: 2%;
+  width: 75%;
+  height: auto;
+
+  @media screen and (min-width: 501px) {
+    width: 25%;
+    padding-left: 2%;
+    
+  }
+}
+
+.header-hospital-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+
+  .nav-item a {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    background-color: $secondary-color;
+    margin: 25px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-item a:hover {
+    background-color: $tertiary-color;
+    color: white;
+  }
+
+  .offcanvas-header {
+    background-color: $tertiary-color;
+  }
+
+}
+
+.navigation-table-father {
+  display: none;
+}
+
+
+
+// --------------------------------------- FOOTER
+.footer-table {
+  display: flex;
+  background-color: $tertiary-color;
+  margin-top: 10px;
+  padding: 30px 15px;
+  max-width: 100%;
+
+  h4 {
+    @include movile-title;
+  }
+
+  p {
+    @include movile-text;
   }
 }

@@ -1,23 +1,213 @@
 .header-telephones {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: bold;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  font-size: 14px;
+  height: auto;
+  width: 100%;
   background-color: #e4e4e4;
 }
+.header-telephones p:nth-child(2) {
+  display: none;
+}
 .header-telephones a {
-  color: black;
   text-decoration: none;
+  color: black;
+}
+
+.header-logo {
+  display: block;
+  margin: auto;
+  padding-left: 2%;
+  width: 75%;
+  height: auto;
+}
+@media screen and (min-width: 501px) {
+  .header-logo {
+    width: 25%;
+    padding-left: 2%;
+  }
+}
+
+.header-hospital-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar .nav-item a {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  background-color: #e4e4e4;
+  margin: 25px 0px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+.navbar .nav-item a:hover {
+  background-color: #858585;
+  color: white;
+}
+.navbar .offcanvas-header {
+  background-color: #858585;
+}
+
+.navigation-table-father {
+  display: none;
+}
+
+.footer-table {
+  display: flex;
+  background-color: #858585;
+  margin-top: 10px;
+  padding: 30px 15px;
+  max-width: 100%;
+}
+.footer-table h4 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.footer-table p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.body-banner {
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.index-body-news {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e4e4e4;
+  margin: 25px 0px;
+}
+
+.index-news .container h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.index-news .container p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.index-news .container .card .card-body {
+  background-color: #e4e4e4;
+}
+
+.patient-form {
+  background-color: #e4e4e4;
+  margin: 10px auto 20px;
+  padding: 0px;
+  width: 95%;
+  border-radius: 10px;
+}
+@media screen and (min-width: 501px) {
+  .patient-form {
+    margin: 50px auto;
+    padding: 40px 20px;
+    width: 70%;
+  }
+}
+.patient-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 15px;
+}
+@media screen and (min-width: 501px) {
+  .patient-form .form {
+    gap: 30px;
+    padding: 0 15%;
+  }
+}
+.patient-form .form > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+}
+@media screen and (min-width: 501px) {
+  .patient-form .form > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.patient-form .form .consultation {
+  flex-direction: column;
+  align-items: center;
+}
+.patient-form .form .consultation textarea {
+  height: 150px;
+  width: 100%;
+}
+.patient-form .form .button {
+  background-color: #b8b8b6;
+  display: block;
+  margin: 20px auto;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  align-self: center;
+}
+.patient-form label {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.patient-form input,
+.patient-form textarea {
+  padding: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 5px ridge;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 501px) {
+  .patient-form input,
+  .patient-form textarea {
+    width: 55%;
+  }
+}
+
+.patient-form-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+@media screen and (min-width: 501px) {
+  .patient-form-title {
+    margin-bottom: 40px;
+  }
+}
+.patient-form-title h1 {
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+}
+@media screen and (min-width: 501px) {
+  .patient-form-title h1 {
+    font-size: 36px;
+  }
 }
 
 body {
   background-color: #b8b8b6;
-}
-
-.navbar {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

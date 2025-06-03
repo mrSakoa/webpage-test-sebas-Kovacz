@@ -1,0 +1,100 @@
+@use "variables" as *;
+
+.patient-form {
+    background-color: $secondary-color;
+    margin: 10px auto 20px;
+    padding: 0px;
+    width: 95%;
+    border-radius: 10px;
+
+    @media screen and (min-width: 501px) {
+        margin: 50px auto;
+        padding: 40px 20px;
+        width: 70%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+
+        @media screen and (min-width: 501px) {
+            gap: 30px;
+            padding: 0 15%;
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 0;
+
+            @media screen and (min-width: 501px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .consultation {
+            flex-direction: column;
+            align-items: center;
+
+            textarea {
+                height: 150px;
+                width: 100%;
+            }
+        }
+
+        .button {
+            background-color: $primary-color;
+            display: block;
+            margin: 20px auto;
+            height: 50px;
+            width: 150px;
+            @include movile-title;
+            font-weight: bold;
+            align-self: center;
+
+        }
+    }
+
+    label {
+        @include movile-title;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+        @include movile-text;
+        border: 5px ridge;
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: 501px) {
+            width: 55%;
+        }
+    }
+}
+
+.patient-form-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: $text-paragraph-movile;
+
+    @media screen and (min-width: 501px) {
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: $text-title-movile + ($text-title-movile *0.5);
+        text-decoration: underline;
+        letter-spacing: 1.5px;
+
+        @media screen and (min-width: 501px) {
+            font-size: 36px;
+        }
+    }
+}

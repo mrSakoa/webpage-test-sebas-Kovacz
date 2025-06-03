@@ -1,10 +1,21 @@
-
 $primary-color: #b8b8b6;
 $secondary-color: #e4e4e4;
 $tertiary-color: #858585;
+$text-title-movile: 20px;
+$text-paragraph-movile: 16px;
 
-@mixin row-centered{
+@mixin row-centered {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@mixin movile-text {
+  font-size: $text-paragraph-movile;
+  letter-spacing: 1px;
+}
+
+@mixin movile-title {
+  font-size: $text-title-movile;
+  letter-spacing: 1.5px;
 }

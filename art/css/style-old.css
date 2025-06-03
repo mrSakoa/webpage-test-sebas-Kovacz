@@ -84,6 +84,7 @@ body {
   padding-right: 5px;
 }
 /* Phone workings general ------------------------------------*/
+/*
 @media screen and (max-width: 500px) {
   .header-telephones p:nth-child(2){
     display:none;
@@ -122,6 +123,7 @@ body {
   }
   
 }
+  */
 /* General items ends   ---------------------------------------------------------------------------------  */
 
 /*Index starts          ---------------------------------------------------------------------------------- */

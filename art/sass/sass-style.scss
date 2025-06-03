@@ -1,9 +1,8 @@
 @use "partials/header-footer" as *;
 @use 'partials/variables' as*;
+@use 'partials/index' as*;
+@use 'partials/turns' as*;
 
 body {
     background-color: $primary-color;
-}
-.navbar {
-display:  none;
 }

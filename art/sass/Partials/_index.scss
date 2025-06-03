@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+.body-banner {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+}
+
+.index-body-news {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: $secondary-color;
+    margin: 25px 0px;
+
+}
+
+.index-news {
+    .container {
+        h3 {
+            @include movile-title;
+        }
+
+        p {
+            @include movile-text;
+
+        }
+
+        .card {
+            .card-body {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
