@@ -1,7 +1,10 @@
+@use "partials/contacts" as*;
 @use "partials/header-footer" as *;
-@use 'partials/variables' as*;
+@use 'partials/health' as*;
 @use 'partials/index' as*;
+@use 'partials/sports' as*;
 @use 'partials/turns' as*;
+@use 'partials/variables' as*;
 
 body {
     background-color: $primary-color;

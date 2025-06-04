@@ -31,12 +31,12 @@
   @media screen and (min-width: 501px) {
     width: 25%;
     padding-left: 2%;
-    
+
   }
 }
 
 .header-hospital-name {
-  font-size: 40px;
+  font-size: $text-title-mobile + $text-title-mobile * 0.7;
   margin-bottom: 30px;
   text-decoration: underline;
   text-align: center;
@@ -44,7 +44,6 @@
 
 .navbar {
   display: flex;
-
   .nav-item a {
     display: block;
     width: 100%;
@@ -66,10 +65,42 @@
     background-color: $tertiary-color;
   }
 
+  @media screen and (min-width: 501px) {
+    display: none;
+
+  }
 }
 
 .navigation-table-father {
   display: none;
+
+  @media screen and (min-width: 501px) {
+    @include row-centered;
+    margin: 10px 0px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    background-color: $secondary-color;
+
+    a {
+      display: flex;
+      background-color: $primary-color;
+      padding: 0px 50px;
+      font-size: $text-paragraph-desktop
+      align-items center;
+      font-weight: bold;
+      justify-content: center;
+      height: 40px;
+      color:black;
+    }
+    a:hover{
+      background-color: $tertiary-color;
+      color: white;
+    }
+
+  }
+
+
 }
 
 
@@ -83,10 +114,10 @@
   max-width: 100%;
 
   h4 {
-    @include movile-title;
+    @include mobile-title;
   }
 
   p {
-    @include movile-text;
+    @include mobile-text;
   }
 }

@@ -12,24 +12,21 @@
     text-align: center;
     background-color: $secondary-color;
     margin: 25px 0px;
-
 }
-
 .index-news {
     .container {
         h3 {
-            @include movile-title;
+            @include mobile-title;
         }
 
         p {
-            @include movile-text;
+            @include mobile-text;
 
         }
 
-        .card {
-            .card-body {
-                background-color: $secondary-color;
-            }
+
+        .card{
+            @include secondary-background-mobile;
         }
     }
 }

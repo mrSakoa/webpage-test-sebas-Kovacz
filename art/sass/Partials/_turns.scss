@@ -47,12 +47,12 @@
         }
 
         .button {
+            @include mobile-title;
             background-color: $primary-color;
             display: block;
             margin: 20px auto;
             height: 50px;
             width: 150px;
-            @include movile-title;
             font-weight: bold;
             align-self: center;
 
@@ -60,14 +60,14 @@
     }
 
     label {
-        @include movile-title;
+        @include mobile-title;
         font-weight: bold;
     }
 
     input,
     textarea {
+        @include mobile-text;
         padding: 8px;
-        @include movile-text;
         border: 5px ridge;
         width: 100%;
         height: auto;
@@ -82,14 +82,14 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: $text-paragraph-movile;
+    font-size: $text-paragraph-mobile;
 
     @media screen and (min-width: 501px) {
         margin-bottom: 40px;
     }
 
     h1 {
-        font-size: $text-title-movile + ($text-title-movile *0.5);
+        font-size: $text-title-mobile + ($text-title-mobile *0.5);
         text-decoration: underline;
         letter-spacing: 1.5px;
 

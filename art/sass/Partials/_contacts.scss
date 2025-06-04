@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+
+.contact-title {
+    margin: 15px;
+
+    h1 {
+        @include mobile-title;
+        text-decoration: underline 2px;
+    }
+
+    p {
+        font-size: $text-paragraph-mobile;
+    }
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    @include secondary-background-mobile;
+    padding: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    align-items: flex-start;
+
+    .form {
+        width: 100%;
+    }
+
+    .title {
+        @include mobile-title;
+        text-decoration: underline 2px;
+        padding: 10px 5px;
+        margin-left: 5px;
+    }
+
+    .form>div {
+        @include centered;
+        margin: 20px;
+    }
+
+    input,
+    textarea {
+        @include centered;
+        padding: $text-paragraph-mobile *0.5;
+        margin-left: 15px;
+        font-size: 16px;
+        border: 5px ridge;
+        width: 90%;
+    }
+
+    .consultation textarea {
+        height: $text-paragraph-mobile * 20;
+        width: 90%;
+    }
+
+    .button {
+        display: block;
+        height: 50px;
+        width: 150px;
+        margin: 20px auto;
+    }
+}
