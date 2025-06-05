@@ -28,7 +28,7 @@
         }
 
         .button {
-            @include mobile-title;
+            font-size: $text-paragraph-mobile * 1.2;
             background-color: $primary-color;
             display: block;
             margin: 20px auto;
@@ -64,17 +64,17 @@
         .form {
             gap: 30px;
             padding: 0 10%;            
+            
             .button {
-                font-size: $text-title-desktop;
+                font-size: $text-paragraph-desktop* 1.2;
                 width: 200px;
                 height: 60px;
             }
-
             label {
                 padding: 0px 5px;
                 font-size: $text-paragraph-desktop;
             }
-
+            
             input,
             textarea {
                 font-size: $text-paragraph-desktop;
