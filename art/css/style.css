@@ -9,6 +9,18 @@
 .contact-title p {
   font-size: 16px;
 }
+@media screen and (min-width: 501px) {
+  .contact-title {
+    margin: 40px 11%;
+  }
+  .contact-title h1 {
+    font-size: 36px;
+    text-decoration: underline 3px;
+  }
+  .contact-title p {
+    font-size: 18px;
+  }
+}
 
 .contact-form {
   display: flex;
@@ -25,23 +37,22 @@
   width: 100%;
 }
 .contact-form .title {
+  margin-left: 5px;
+}
+.contact-form .title h2 {
   font-size: 24px;
   letter-spacing: 1.5px;
   text-decoration: underline 2px;
-  padding: 10px 5px;
-  margin-left: 5px;
 }
 .contact-form .form > div {
   display: flex;
   flex-direction: column;
   justify-items: center;
   margin: 20px;
+  font-size: 16px;
 }
 .contact-form input,
 .contact-form textarea {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
   padding: 8px;
   margin-left: 15px;
   font-size: 16px;
@@ -49,23 +60,57 @@
   width: 90%;
 }
 .contact-form .consultation textarea {
+  font-size: 16px;
   height: 320px;
   width: 90%;
 }
 .contact-form .button {
+  font-size: 16px;
   display: block;
   height: 50px;
   width: 150px;
   margin: 20px auto;
 }
+@media screen and (min-width: 501px) {
+  .contact-form {
+    margin: 0px auto;
+    width: 80%;
+  }
+  .contact-form .title {
+    margin-left: 25px;
+  }
+  .contact-form .title h2 {
+    font-size: 36px;
+    padding: 20px 0px;
+  }
+  .contact-form .form > div {
+    font-size: 25.2px;
+    margin: 50px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 9px;
+    font-size: 18px;
+  }
+  .contact-form .consultation textarea {
+    font-size: 18px;
+    height: 180px;
+  }
+  .contact-form .button {
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+  }
+}
 
 .header-telephones {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
   margin-top: 50px;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 12.8px;
   height: auto;
   width: 100%;
   background-color: #e4e4e4;
@@ -73,9 +118,18 @@
 .header-telephones p:nth-child(2) {
   display: none;
 }
-.header-telephones a {
-  text-decoration: none;
-  color: black;
+@media screen and (min-width: 501px) {
+  .header-telephones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto auto 20px;
+    font-size: 18px;
+  }
+  .header-telephones p:nth-child(2) {
+    display: flex;
+    padding: 10px;
+  }
 }
 
 .header-logo {
@@ -87,7 +141,7 @@
 }
 @media screen and (min-width: 501px) {
   .header-logo {
-    width: 25%;
+    width: 30%;
     padding-left: 2%;
   }
 }
@@ -97,6 +151,16 @@
   margin-bottom: 30px;
   text-decoration: underline;
   text-align: center;
+}
+@media screen and (min-width: 501px) {
+  .header-hospital-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
 }
 
 .navbar {
@@ -144,7 +208,8 @@
     display: flex;
     background-color: #b8b8b6;
     padding: 0px 50px;
-    font-size: 18px align-items center;
+    font-size: 18px;
+    align-items: center;
     font-weight: bold;
     justify-content: center;
     height: 40px;
@@ -171,36 +236,61 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
+.footer-table img {
+  width: 6%;
+  height: auto;
+}
+@media screen and (min-width: 501px) {
+  .footer-table {
+    margin-top: 30px;
+    padding: 10px 10px;
+    overflow-x: hidden;
+  }
+  .footer-table img {
+    width: 10%;
+    height: auto;
+  }
+  .footer-table h4 {
+    font-size: 25.2px;
+  }
+  .footer-table p {
+    font-size: 12.6px;
+  }
+}
 
 .health-main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 20px auto;
 }
 .health-main h1 {
   font-size: 24px;
   letter-spacing: 1.5px;
   text-decoration: underline 2px black;
 }
+@media screen and (min-width: 501px) {
+  .health-main h1 {
+    font-size: 54px;
+  }
+}
 
 .health-article {
   background-color: #e4e4e4;
   border-radius: 20px;
   width: 95%;
+  font-size: 16px;
+  letter-spacing: 1px;
   margin: auto;
-  padding: 5px;
+  padding: 15px;
 }
 .health-article h2 {
   font-size: 24px;
   letter-spacing: 1.5px;
-  padding: 10px;
   text-align: center;
   text-decoration: underline 2px black;
 }
 .health-article p {
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 10px;
   text-align: justify;
 }
 .health-article img {
@@ -211,9 +301,24 @@
   border-radius: 10px;
 }
 .health-article ul {
-  font-size: 16px;
-  letter-spacing: 1px;
   margin: 0px 5px 20px;
+}
+@media screen and (min-width: 501px) {
+  .health-article {
+    font-size: 18px;
+    width: 85%;
+    padding: 30px;
+    margin: 50px auto;
+  }
+  .health-article h2 {
+    font-size: 36px;
+  }
+  .health-article img {
+    width: 60%;
+  }
+  .health-article ul {
+    margin: 10px 20px 20px;
+  }
 }
 
 .body-banner {
@@ -222,30 +327,52 @@
   margin: 10px 0px;
 }
 
-.index-body-news {
-  font-size: 24px;
+.index-news .index-body-news {
+  font-size: 28.8px;
   font-weight: bold;
   text-align: center;
   background-color: #e4e4e4;
   margin: 25px 0px;
 }
-
+@media screen and (min-width: 501px) {
+  .index-news .index-body-news {
+    font-size: 43.2px;
+  }
+}
 .index-news .container h3 {
   font-size: 24px;
   letter-spacing: 1.5px;
 }
+@media screen and (min-width: 501px) {
+  .index-news .container h3 {
+    font-size: 28.8px;
+    font-weight: bold;
+  }
+}
 .index-news .container p {
   font-size: 16px;
   letter-spacing: 1px;
+}
+@media screen and (min-width: 501px) {
+  .index-news .container p {
+    font-size: 18px;
+  }
 }
 .index-news .container .card {
   background-color: #e4e4e4;
   border-radius: 20px;
   width: 95%;
 }
+@media screen and (min-width: 501px) {
+  .index-news .container .card {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+}
 
-.sports-main {
-  font-size: 30px;
+.sports-main h1 {
+  font-size: 33.6px;
   text-align: center;
   text-decoration: underline;
 }
@@ -257,12 +384,13 @@
   align-items: center;
   margin: 0 auto;
   padding: 10px;
+  font-size: 16px;
 }
 .Sport-article h2 {
   font-size: 24px;
+  letter-spacing: 1.5px;
   text-align: center;
   text-decoration: underline;
-  letter-spacing: 1.5px;
 }
 .Sport-article img {
   width: 70%;
@@ -273,30 +401,27 @@
 }
 
 @media screen and (min-width: 501px) {
+  .sports-main h1 {
+    font-size: 50.4px;
+  }
   .Sport-article {
     width: 85%;
     padding: 20px;
+    font-size: 18px;
   }
   .Sport-article h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   .Sport-article img {
-    width: 50%;
+    width: 60%;
   }
 }
 .patient-form {
   background-color: #e4e4e4;
   margin: 10px auto 20px;
-  padding: 0px;
+  padding: 15px 0px;
   width: 95%;
   border-radius: 10px;
-}
-@media screen and (min-width: 501px) {
-  .patient-form {
-    margin: 50px auto;
-    padding: 40px 20px;
-    width: 70%;
-  }
 }
 .patient-form .form {
   display: flex;
@@ -304,26 +429,11 @@
   gap: 15px;
   padding: 0 15px;
 }
-@media screen and (min-width: 501px) {
-  .patient-form .form {
-    gap: 30px;
-    padding: 0 15%;
-  }
-}
 .patient-form .form > div {
-  display: flex;
-  flex-direction: column;
   padding: 10px;
   margin: 0;
 }
-@media screen and (min-width: 501px) {
-  .patient-form .form > div {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .patient-form .form .consultation {
-  flex-direction: column;
   align-items: center;
 }
 .patient-form .form .consultation textarea {
@@ -341,13 +451,13 @@
   font-weight: bold;
   align-self: center;
 }
-.patient-form label {
+.patient-form .form label {
   font-size: 24px;
   letter-spacing: 1.5px;
   font-weight: bold;
 }
-.patient-form input,
-.patient-form textarea {
+.patient-form .form input,
+.patient-form .form textarea {
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px;
@@ -356,31 +466,50 @@
   height: auto;
 }
 @media screen and (min-width: 501px) {
-  .patient-form input,
-  .patient-form textarea {
-    width: 55%;
+  .patient-form {
+    margin: 50px auto;
+    padding: 10px 20px;
+    width: 80%;
+  }
+  .patient-form .form {
+    gap: 30px;
+    padding: 0 10%;
+  }
+  .patient-form .form .button {
+    font-size: 36px;
+    width: 200px;
+    height: 60px;
+  }
+  .patient-form .form label {
+    padding: 0px 5px;
+    font-size: 18px;
+  }
+  .patient-form .form input,
+  .patient-form .form textarea {
+    font-size: 18px;
+    padding: 10px;
   }
 }
 
 .patient-form-title {
+  font-size: 16px;
+  letter-spacing: 1px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 16px;
-}
-@media screen and (min-width: 501px) {
-  .patient-form-title {
-    margin-bottom: 40px;
-  }
 }
 .patient-form-title h1 {
-  font-size: 36px;
+  font-size: 31.2px;
   text-decoration: underline;
   letter-spacing: 1.5px;
 }
 @media screen and (min-width: 501px) {
+  .patient-form-title {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
   .patient-form-title h1 {
-    font-size: 36px;
+    font-size: 46.8px;
   }
 }
 

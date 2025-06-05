@@ -6,27 +6,47 @@
     margin: 10px 0px;
 }
 
-.index-body-news {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    background-color: $secondary-color;
-    margin: 25px 0px;
-}
 .index-news {
+    .index-body-news {
+        font-size: $text-title-mobile * 1.2;
+        font-weight: bold;
+        text-align: center;
+        background-color: $secondary-color;
+        margin: 25px 0px;
+
+        @media screen and (min-width: 501px) {
+            font-size: $text-title-desktop * 1.2;
+        }
+    }
+
     .container {
         h3 {
             @include mobile-title;
+
+            @media screen and (min-width: 501px) {
+                font-size: $text-title-desktop * 0.8;
+                font-weight: bold;
+            }
         }
 
         p {
             @include mobile-text;
 
+            @media screen and (min-width: 501px) {
+                font-size: $text-paragraph-desktop;
+            }
+
         }
 
 
-        .card{
+        .card {
             @include secondary-background-mobile;
+
+            @media screen and (min-width: 501px) {
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+            }
         }
     }
 }

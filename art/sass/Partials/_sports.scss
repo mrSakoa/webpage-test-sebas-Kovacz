@@ -1,9 +1,12 @@
 @use "variables" as *;
 
 .sports-main {
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
+    h1 {
+        font-size: $text-title-mobile * 1.4;
+        text-align: center;
+        text-decoration: underline;
+
+    }
 }
 
 .Sport-article {
@@ -11,12 +14,12 @@
     align-items: center;
     margin: 0 auto;
     padding: 10px;
+    font-size: $text-paragraph-mobile;
 
     h2 {
-        font-size: $text-title-mobile;
+        @include mobile-title;
         text-align: center;
         text-decoration: underline;
-        letter-spacing: 1.5px;
     }
 
     img {
@@ -29,16 +32,24 @@
 }
 
 @media screen and (min-width: 501px) {
+    .sports-main {
+        h1 {
+            font-size: $text-title-desktop * 1.4;
+
+        }
+    }
+
     .Sport-article {
         width: 85%;
         padding: 20px;
+        font-size: $text-paragraph-desktop;
 
         h2 {
-            font-size: 24px;
+            font-size: $text-title-desktop;
         }
 
         img {
-            width: 50%;
+            width: 60%;
         }
     }
 }
