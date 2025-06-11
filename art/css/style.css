@@ -327,7 +327,7 @@
   margin: 10px 0px;
 }
 
-.index-news .index-body-news {
+.index-main {
   font-size: 28.8px;
   font-weight: bold;
   text-align: center;
@@ -335,10 +335,11 @@
   margin: 25px 0px;
 }
 @media screen and (min-width: 501px) {
-  .index-news .index-body-news {
+  .index-main {
     font-size: 43.2px;
   }
 }
+
 .index-news .container h3 {
   font-size: 24px;
   letter-spacing: 1.5px;
