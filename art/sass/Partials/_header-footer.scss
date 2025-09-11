@@ -42,6 +42,7 @@
 }
 
 .header-hospital-name {
+  @include row-centered;
   font-size: $text-title-mobile + $text-title-mobile * 0.7;
   margin-bottom: 30px;
   text-decoration: underline;
