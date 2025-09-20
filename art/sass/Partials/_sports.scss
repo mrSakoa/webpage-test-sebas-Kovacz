@@ -1,12 +1,9 @@
 @use "variables" as *;
 
 .sports-main {
-    h1 {
-        font-size: $text-title-mobile * 1.4;
-        text-align: center;
-        text-decoration: underline;
-
-    }
+    font-size: $text-title-mobile * 1.4;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .Sport-article {
@@ -17,7 +14,7 @@
     font-size: $text-paragraph-mobile;
 
     h2 {
-        @include mobile-title;
+        @include mobile-text("title");
         text-align: center;
         text-decoration: underline;
     }
@@ -32,12 +29,12 @@
 }
 
 @media screen and (min-width: 501px) {
-    .sports-main {
-        h1 {
-            font-size: $text-title-desktop * 1.4;
 
-        }
+    h1 {
+        font-size: $text-title-desktop * 1.4;
+
     }
+
 
     .Sport-article {
         width: 85%;

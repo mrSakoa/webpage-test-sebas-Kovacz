@@ -5,7 +5,7 @@
     margin: 15px;
 
     h1 {
-        @include mobile-title;
+        @include mobile-text("title");
         text-decoration: underline 2px;
     }
 
@@ -45,13 +45,13 @@
         margin-left: 5px;
 
         h2 {
-            @include mobile-title;
+            @include mobile-text("title");
             text-decoration: underline 2px;
         }
     }
 
     .form>div {
-        @include centered;
+        @include flex-centered(column);
         margin: 20px;
         font-size: $text-paragraph-mobile;
     }

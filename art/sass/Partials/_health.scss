@@ -1,11 +1,11 @@
 @use "variables" as *;
 
 .health-main {
-    @include row-centered;
+    @include flex-centered("column");
     margin: 20px auto;
 
     h1 {
-        @include mobile-title;
+        @include mobile-text("title");
         text-decoration: underline 2px black;
     }
 
@@ -19,12 +19,12 @@
 
 .health-article {
     @include secondary-background-mobile;
-    @include mobile-text;
+    @include mobile-text("text");
     margin: auto;
     padding: 15px;
 
     h2 {
-        @include mobile-title;
+        @include mobile-text("title");
         text-align: center;
         text-decoration: underline 2px black;
     }
