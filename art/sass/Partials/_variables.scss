@@ -17,8 +17,8 @@ $tertiary-color: #858585;
 
 @mixin flex-centered($dir: row) {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: $dir;
 }
 
@@ -43,7 +43,7 @@ $text-paragraph-mobile: 16px;
   }
 }
 
-@mixin secondary-background-mobile {
+ %secondary-background-mobile {
   background-color: $secondary-color;
   border-radius: 20px;
   width: 95%;
@@ -57,3 +57,7 @@ $text-paragraph-desktop: 18px;
 
 
 // ----------------------------- desktop centered variables
+
+//  480-500px media query mobile
+// 501px 800px media query tablet
+// 801px + media query desktop

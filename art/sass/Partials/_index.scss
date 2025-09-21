@@ -7,18 +7,21 @@
 }
 
 .index-main {
-    font-size: $text-title-mobile * 1.2;
+    @include mobile-text("title", 1.2);
     font-weight: bold;
     text-align: center;
     background-color: $secondary-color;
     margin: 25px 0px;
+    padding: 5px;
 
     @media screen and (min-width: 501px) {
         font-size: $text-title-desktop * 1.2;
+        padding: 10px;
     }
 }
 
 .index-news {
+
 
     .container {
         h3 {
@@ -26,6 +29,11 @@
 
             @media screen and (min-width: 501px) {
                 font-size: $text-title-desktop * 0.8;
+                font-weight: bold;
+            }
+
+            @media screen and (min-width: 801px) {
+                font-size: $text-title-desktop;
                 font-weight: bold;
             }
         }
@@ -37,11 +45,18 @@
                 font-size: $text-paragraph-desktop;
             }
 
+            @media screen and (min-width: 801px) {
+                font-size: $text-paragraph-desktop;
+            }
+
         }
 
 
         .card {
-            @include secondary-background-mobile;
+            @extend %secondary-background-mobile;
+            margin: 10px;
+            padding: auto;
+            
 
             @media screen and (min-width: 501px) {
                 height: 100%;

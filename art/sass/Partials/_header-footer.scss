@@ -43,7 +43,7 @@
 
 .header-hospital-name {
   @include flex-centered(row);
-  @include mobile-text("title",1.5);
+  @include mobile-text("title", 1.5);
   margin-bottom: 30px;
   text-decoration: underline;
   text-align: center;
@@ -87,42 +87,71 @@
 
 .navigation-table-father {
   display: none;
-  @include flex-centered(row);
 
-  @media screen and (min-width: 501px) {
-    margin: 10px 0px;
-    padding: 10px;
+  @media (min-width: 501px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    font-size: $text-paragraph-desktop;
+    width: 100%;
     gap: 10px;
-    justify-content: center;
-    background-color: $secondary-color;
+    padding: 10px;
+    background: $secondary-color;
+
+    >* {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
 
     a {
       display: flex;
-      background-color: $primary-color;
-      padding: 0px 50px;
-      font-size: $text-paragraph-desktop;
+      justify-content: center;
       align-items: center;
       font-weight: bold;
-      justify-content: center;
-      height: 40px;
       color: black;
+      background: $primary-color;
+      padding-inline: 20px;
+      font-size: $text-paragraph-desktop;
+      height: 80px;
+      @media (min-width: 800px) {
+        height: 50px;        
+      }
+    }
+
+    @media (min-width: 1070px) {
+      justify-content: center;
+
+      >* {
+        flex: 0 0 auto;
+        width: auto;
+        align-items: center;
+
+      }
+
+      a {
+        font-size: $text-paragraph-desktop * 1.2;
+        height: 50px;
+        width: 200px;
+        gap: 20px;
+      }
+
     }
 
     a:hover {
-      background-color: $tertiary-color;
+      background: $tertiary-color;
       color: white;
     }
-
   }
-
-
 }
+
 
 
 
 // --------------------------------------- FOOTER
 .footer-table {
   display: flex;
+  width: 90%;
   background-color: $tertiary-color;
   margin-top: 10px;
   padding: 30px 15px;
@@ -140,10 +169,10 @@
     width: 6%;
     height: auto;
   }
+
   @media screen and (min-width: 501px) {
     margin-top: 30px;
     padding: 10px 10px;
-    overflow-x: hidden;
 
     img {
       width: 10%;

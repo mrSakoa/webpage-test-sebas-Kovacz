@@ -31,7 +31,7 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    @include secondary-background-mobile;
+    @extend %secondary-background-mobile;
     padding: 20px;
     margin: 0 auto;
     font-weight: bold;

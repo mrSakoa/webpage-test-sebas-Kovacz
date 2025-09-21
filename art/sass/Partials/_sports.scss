@@ -7,7 +7,7 @@
 }
 
 .Sport-article {
-    @include secondary-background-mobile;
+    @extend %secondary-background-mobile;
     align-items: center;
     margin: 0 auto;
     padding: 10px;
