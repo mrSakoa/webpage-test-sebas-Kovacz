@@ -27,12 +27,13 @@
 
   @media screen and (min-width: 501px) and (max-width: 800px) {
     @include flex-centered(row);
-    font-size: $text-paragraph-desktop * 1.2 ;
+    font-size: $text-paragraph-desktop * 1.2;
     justify-content: space-evenly;
-    margin: auto ;
+    margin: auto;
     padding: 20px;
+
     p {
-      text-align:center;
+      text-align: center;
       width: 250px;
 
     }
@@ -40,8 +41,8 @@
     p:nth-child(2) {
       display: flex;
       padding: 10px;
-      width:auto;
-      
+      width: auto;
+
     }
 
   }
@@ -55,9 +56,13 @@
   width: 75%;
   height: auto;
 
-  @media screen and (min-width: 501px) {
-    width: 30%;
-    padding-left: 2%;
+  @media screen and (min-width: 801px) {
+    width: 40%;
+
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    width: 50%;
 
   }
 }
@@ -181,11 +186,13 @@
 // --------------------------------------- FOOTER
 .footer-table {
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
   background-color: $tertiary-color;
   margin-top: 10px;
   padding: 30px 15px;
-  max-width: 100%;
+  
 
   h4 {
     @include mobile-text("title");
@@ -196,17 +203,38 @@
   }
 
   img {
-    width: 6%;
+    width: max(10vw);
+    min-width: 20px;
     height: auto;
   }
 
-  @media screen and (min-width: 501px) {
-    margin-top: 30px;
-    padding: 10px 10px;
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    .row {
+      flex-direction: column;
+      width: 100%;
+    }
+    .row > div{
+      width: 100%;
+    }
 
     img {
-      width: 10%;
-      height: auto;
+      width: max(6vw);
+      min-width: 30px;
+    }
+
+    h4 {
+      @include mobile-text("title");
+    }
+
+    p {
+      @include mobile-text("text");
+    }
+  }
+
+  @media screen and (min-width: 801px) {
+    img {
+      width: max(3vw);
+      min-width: 40px;
     }
 
     h4 {
@@ -217,4 +245,6 @@
       font-size: $text-paragraph-desktop * 0.7;
     }
   }
+
+
 }

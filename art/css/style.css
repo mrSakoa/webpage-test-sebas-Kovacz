@@ -180,10 +180,14 @@
   width: 75%;
   height: auto;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   .header-logo {
-    width: 30%;
-    padding-left: 2%;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .header-logo {
+    width: 50%;
   }
 }
 
@@ -300,11 +304,12 @@
 
 .footer-table {
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
   background-color: #858585;
   margin-top: 10px;
   padding: 30px 15px;
-  max-width: 100%;
 }
 .footer-table h4 {
   font-size: 24px;
@@ -315,17 +320,35 @@
   letter-spacing: 1px;
 }
 .footer-table img {
-  width: 6%;
+  width: 10vw;
+  min-width: 20px;
   height: auto;
 }
-@media screen and (min-width: 501px) {
-  .footer-table {
-    margin-top: 30px;
-    padding: 10px 10px;
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .footer-table .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-table .row > div {
+    width: 100%;
   }
   .footer-table img {
-    width: 10%;
-    height: auto;
+    width: 6vw;
+    min-width: 30px;
+  }
+  .footer-table h4 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+  .footer-table p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .footer-table img {
+    width: 3vw;
+    min-width: 40px;
   }
   .footer-table h4 {
     font-size: 25.2px;
@@ -418,11 +441,14 @@
   }
 }
 
+.index-news {
+  margin-bottom: 40px;
+}
 .index-news .container h3 {
   font-size: 24px;
   letter-spacing: 1.5px;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .index-news .container h3 {
     font-size: 28.8px;
     font-weight: bold;
@@ -438,9 +464,9 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .index-news .container p {
-    font-size: 18px;
+    font-size: 14.4px;
   }
 }
 @media screen and (min-width: 801px) {
@@ -450,13 +476,10 @@
 }
 .index-news .container .card {
   margin: 10px;
-  padding: auto;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .index-news .container .card {
-    height: 100%;
     width: 100%;
-    padding: 5px;
   }
 }
 
