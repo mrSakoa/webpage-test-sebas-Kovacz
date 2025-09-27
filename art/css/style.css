@@ -20,7 +20,7 @@
 .contact-title {
   margin: 15px;
 }
-.contact-title h1 {
+.contact-title h2 {
   font-size: 24px;
   letter-spacing: 1.5px;
   text-decoration: underline 2px;
@@ -32,7 +32,7 @@
   .contact-title {
     margin: 40px 11%;
   }
-  .contact-title h1 {
+  .contact-title h2 {
     font-size: 36px;
     text-decoration: underline 3px;
   }
@@ -88,7 +88,7 @@
   width: 150px;
   margin: 20px auto;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   .contact-form {
     margin: 0px auto;
     width: 80%;
@@ -97,11 +97,11 @@
     margin-left: 25px;
   }
   .contact-form .title h2 {
-    font-size: 36px;
+    font-size: 54px;
     padding: 20px 0px;
   }
   .contact-form .form > div {
-    font-size: 25.2px;
+    font-size: 36px;
     margin: 50px;
   }
   .contact-form input,
@@ -117,6 +117,37 @@
     font-size: 18px;
     width: 200px;
     height: 60px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .contact-form {
+    margin: 40px auto;
+    width: 90%;
+  }
+  .contact-form .title {
+    margin-left: 25px;
+  }
+  .contact-form .title h2 {
+    font-size: 36px;
+    padding: 20px 0px;
+  }
+  .contact-form .form > div {
+    font-size: 25.2px;
+    margin: 50px 0px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12.6px;
+    font-size: 18px;
+  }
+  .contact-form .consultation textarea {
+    font-size: 18px;
+    height: 180px;
+  }
+  .contact-form .button {
+    font-size: 18px;
+    width: 250px;
+    height: 80px;
   }
 }
 
@@ -177,7 +208,8 @@
   display: block;
   margin: auto;
   padding-left: 2%;
-  width: 75%;
+  width: 60%;
+  max-width: 550px;
   height: auto;
 }
 @media screen and (min-width: 801px) {
@@ -205,7 +237,7 @@
 @media screen and (min-width: 501px) and (max-width: 800px) {
   .header-hospital-name {
     gap: 10px;
-    font-size: 36px;
+    font-size: 50.4px;
     margin-bottom: 50px;
   }
 }
@@ -364,22 +396,26 @@
   justify-content: center;
   flex-direction: "column";
   margin: 20px auto;
-}
-.health-main h1 {
   font-size: 24px;
   letter-spacing: 1.5px;
   text-decoration: underline 2px black;
 }
-@media screen and (min-width: 501px) {
-  .health-main h1 {
+@media screen and (min-width: 801px) {
+  .health-main {
     font-size: 54px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .health-main {
+    margin: 50px auto;
+    font-size: 36px;
   }
 }
 
 .health-article {
   font-size: 16px;
   letter-spacing: 1px;
-  margin: auto;
+  margin: 50px auto 30px;
   padding: 15px;
 }
 .health-article h2 {
@@ -401,12 +437,29 @@
 .health-article ul {
   margin: 0px 5px 20px;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .health-article {
+    margin: 30px, auto, auto;
+    font-size: 18px;
+    width: 90%;
+    padding: 30px;
+  }
+  .health-article h2 {
+    font-size: 36px;
+  }
+  .health-article img {
+    width: 100%;
+  }
+  .health-article ul {
+    margin: 10px 20px 20px;
+  }
+}
+@media screen and (min-width: 801px) {
   .health-article {
     font-size: 18px;
     width: 85%;
     padding: 30px;
-    margin: 50px auto;
+    margin: 50px, auto, 50px;
   }
   .health-article h2 {
     font-size: 36px;
@@ -488,6 +541,17 @@
   text-align: center;
   text-decoration: underline;
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .sports-main {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .sports-main {
+    font-size: 61.2px;
+    margin: 50px auto;
+  }
+}
 
 .Sport-article {
   align-items: center;
@@ -502,20 +566,28 @@
   text-decoration: underline;
 }
 .Sport-article img {
-  width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   display: block;
   margin: 10px auto;
 }
-
-@media screen and (min-width: 501px) {
-  h1 {
-    font-size: 50.4px;
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .Sport-article {
+    margin: 30px auto auto;
+    font-size: 18px;
+    width: 90%;
+    padding: 30px;
   }
+  .Sport-article h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 801px) {
   .Sport-article {
     width: 85%;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 50px;
     font-size: 18px;
   }
   .Sport-article h2 {
@@ -523,8 +595,10 @@
   }
   .Sport-article img {
     width: 60%;
+    margin: 30px auto;
   }
 }
+
 .patient-form {
   background-color: #e4e4e4;
   margin: 10px auto 20px;
@@ -573,7 +647,7 @@
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   .patient-form {
     margin: 50px auto;
     padding: 10px 20px;
@@ -581,7 +655,7 @@
   }
   .patient-form .form {
     gap: 30px;
-    padding: 0 10%;
+    padding: 0px;
   }
   .patient-form .form .button {
     font-size: 21.6px;
@@ -589,6 +663,32 @@
     height: 60px;
   }
   .patient-form .form label {
+    padding: 0px 5px;
+    font-size: 18px;
+  }
+  .patient-form .form input,
+  .patient-form .form textarea {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .patient-form {
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  .patient-form .form {
+    gap: 30px;
+    padding: 0px;
+  }
+  .patient-form .form .button {
+    font-size: 21.6px;
+    width: 200px;
+    height: 80px;
+  }
+  .patient-form .form label {
+    width: 90%;
     padding: 0px 5px;
     font-size: 18px;
   }
@@ -606,18 +706,28 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.patient-form-title h1 {
+.patient-form-title h2 {
   font-size: 31.2px;
   text-decoration: underline;
   letter-spacing: 1.5px;
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   .patient-form-title {
     margin-bottom: 40px;
     font-size: 18px;
   }
-  .patient-form-title h1 {
+  .patient-form-title h2 {
     font-size: 46.8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .patient-form-title {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .patient-form-title h2 {
+    font-size: 36px;
+    font-weight: 500;
   }
 }
 

@@ -44,16 +44,15 @@
       width: auto;
 
     }
-
   }
-
 }
 
 .header-logo {
   display: block;
   margin: auto;
   padding-left: 2%;
-  width: 75%;
+  width: 60%;
+  max-width: 550px;
   height: auto;
 
   @media screen and (min-width: 801px) {
@@ -63,7 +62,6 @@
 
   @media screen and (min-width: 501px) and (max-width: 800px) {
     width: 50%;
-
   }
 }
 
@@ -77,7 +75,7 @@
 
   @media screen and (min-width: 501px) and (max-width: 800px) {
     gap: 10px;
-    font-size: $text-title-desktop ;
+    font-size: $text-title-desktop * 1.4 ;
     margin-bottom: 50px;
 
   }
@@ -245,6 +243,4 @@
       font-size: $text-paragraph-desktop * 0.7;
     }
   }
-
-
 }

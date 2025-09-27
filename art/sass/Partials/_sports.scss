@@ -4,6 +4,16 @@
     font-size: $text-title-mobile * 1.4;
     text-align: center;
     text-decoration: underline;
+
+    @media screen and (min-width: 501px) and (max-width: 800px) {
+        font-size: $text-title-desktop;
+    }
+
+    @media screen and (min-width: 801px) {
+        font-size: $text-title-desktop * 1.7;
+        margin: 50px auto;
+    }
+
 }
 
 .Sport-article {
@@ -20,33 +30,39 @@
     }
 
     img {
-        width: 70%;
+        width: 100%;
         height: auto;
         border-radius: 20px;
         display: block;
         margin: 10px auto;
     }
-}
 
-@media screen and (min-width: 501px) {
+    @media screen and (min-width: 501px) and (max-width: 800px) {
 
-    h1 {
-        font-size: $text-title-desktop * 1.4;
+        margin: 30px auto auto;
+        font-size: $text-paragraph-desktop;
+        width: 90%;
+        padding: 30px;
 
+        h2 {
+            font-size: $text-title-desktop;
+        }
     }
-
-
-    .Sport-article {
+    
+    @media screen and (min-width: 801px) {    
         width: 85%;
-        padding: 20px;
+        margin: 50px auto;
+        padding: 50px;
         font-size: $text-paragraph-desktop;
 
         h2 {
             font-size: $text-title-desktop;
         }
-
+    
         img {
             width: 60%;
+            margin: 30px auto;
         }
+    
     }
 }
